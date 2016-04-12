@@ -3,9 +3,9 @@ var numWrong = 0;
 
 alert('Hi! Let\'s play a guessing game about me!');
 var userName = prompt('To begin, tell me your name');
-console.log('User name is ' + userName);
+console.log('User\'s name is ' + userName);
 
-alert('Okay ' + userName + ' , let\'s begin!');
+alert('Okay ' + userName + ', let\'s begin!');
 
 var answer1 = prompt('Do I like to code?').toUpperCase();
 console.log('Does ' + userName + ' think I like to code? ' + answer1);
@@ -60,5 +60,5 @@ if(answer5 === 'Y' || answer5 === 'YES') {
 if(numCorrect >= 3){
   alert('Good Job ' + userName + ' , you got ' + numCorrect + ' correct!');
 } else {
-  alert('You did pretty well ' + userName + ' , you got ' + numCorrect + ' correct' + ' and ' + numWrong + ' wrong.');
+  alert('Better luck next time ' + userName + ', you got ' + numCorrect + ' correct' + ' and ' + numWrong + ' wrong.');
 }
