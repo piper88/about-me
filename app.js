@@ -58,7 +58,7 @@ if(answer5 === 'Y' || answer5 === 'YES') {
 }
 
 if(numCorrect >= 3){
-  alert('Good Job ' + userName + ' , you got ' + numCorrect + ' correct!');
+  alert('Good Job ' + userName + ', you got ' + numCorrect + ' correct!');
 } else {
   alert('Better luck next time ' + userName + ', you got ' + numCorrect + ' correct' + ' and ' + numWrong + ' wrong.');
 }
