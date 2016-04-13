@@ -7,58 +7,58 @@ console.log('User\'s name is ' + userName);
 
 alert('Okay ' + userName + ', let\'s begin!');
 
-var answer1 = prompt('Do I like to code?').toUpperCase();
-console.log('Does ' + userName + ' think I like to code? ' + answer1);
+var answer1 = prompt('Do I like to go hiking?').toUpperCase();
+console.log('Does ' + userName + ' think I like hiking? ' + answer1);
 if(answer1 === 'Y' || answer1 === 'YES') {
-  alert('Correct!');
+  alert('Correct! Hiking and backpacking are some of my favorite activities.');
   numCorrect += 1;
 } else {
-  alert('WRONG you big dummy');
+  alert('I actually do like to hike');
   numWrong += 1;
 }
 
-var answer2 = prompt('Is my favorite number 47?').toUpperCase();
-console.log('Does ' + userName + ' think 47 is my fave number? ' + answer2);
-if(answer2 === 'Y' || answer2 === 'YES') {
-  alert('Good Job ' + userName);
+var answer2 = prompt('Did I go to college in Washington State?').toUpperCase();
+console.log('Does ' + userName + ' think I went to college in Washington? ' + answer2);
+if(answer2 === 'N' || answer2 === 'no') {
+  alert('You\'re right ' + userName + ', I went to school in California, at Pomona College.');
   numCorrect += 1;
 } else {
-  alert('WRONG');
+  alert('Actually, I went to college in California, at Pomona College.');
   numWrong += 1;
 }
 
-var answer3 = prompt('Is my favorite food salad?').toUpperCase();
-console.log('Does ' + userName + ' think salad is my favorite food? ' + answer3);
+var answer3 = prompt('Am I attempting to grow my first garden this summer?').toUpperCase();
+console.log('Does ' + userName + ' think I\'m growing my first garden this season? ' + answer3);
 if(answer3 === 'Y' || answer3 === 'YES') {
-  alert('Of course not!');
+  alert('I am! So far the squirrels have dug up everything I\'ve planted, but I\'m still hopeful.');
   numWrong += 1;
 } else {
-  alert('Correct! My favorite food is french fries');
+  alert('I am trying to grow my first garden this year-- I\'ve never done it before!');
   numCorrect += 1;
 }
 
 var answer4 = prompt('Do I have a dog named Piper?').toUpperCase();
 console.log('Does ' + userName + ' think I have a dog named Piper? ' + answer4);
 if(answer4 === 'Y' || answer4 === 'YES') {
-  alert('Correct ' + userName);
+  alert('Correct ' + userName + ', she is a black lab and husky mix');
   numCorrect += 1;
 } else {
   alert('Incorrect, I do have a dog named Piper');
   numWrong += 1;
 }
 
-var answer5 = prompt('Is this a good game?').toUpperCase();
-console.log('Does ' + userName + ' think this is a good game? ' + answer5);
+var answer5 = prompt('Do I like coffee more than tea?').toUpperCase();
+console.log('Does ' + userName + ' think I prefer coffee over tea? ' + answer5);
 if(answer5 === 'Y' || answer5 === 'YES') {
-  alert('Bingo!');
+  alert('Bingo! I am very addicted to coffee and rarely drink tea.');
   numCorrect += 1;
 } else {
-  alert('WHAT???? Wrong answer');
+  alert('No, I actually much prefer coffee to tea.');
   numWrong += 1;
 }
 
 if(numCorrect >= 3){
-  alert('Good Job ' + userName + ', you got ' + numCorrect + ' correct!');
+  alert('Good Job ' + userName + ' , you got ' + numCorrect + ' correct!');
 } else {
-  alert('Better luck next time ' + userName + ', you got ' + numCorrect + ' correct' + ' and ' + numWrong + ' wrong.');
+  alert('Better luck next time ' + userName + ' , you got ' + numCorrect + ' correct' + ' and ' + numWrong + ' wrong.');
 }
