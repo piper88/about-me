@@ -92,7 +92,7 @@ var states = ['CALIFORNIA', 'OREGON', 'HAWAII'];
 
 while(numGuesses7 < 6) {
   var userAnswer7 = prompt('What state besides Washington have I lived in?').toUpperCase();
-  for(i = 0; i < states.length; i++) {
+  for(var i = 0; i < states.length; i++) {
     if(userAnswer7 === states[0] || userAnswer7 === states[1] || userAnswer7 === states[2]) {
       alert('Correct!');
       numGuesses7 = 6;
