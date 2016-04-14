@@ -1,6 +1,7 @@
 # About Me
 Assignment for Code 201 to create a personal profile page with a guessing game
 
-I like popsicles.
+Driver -- Susan
+Navigator -- Me!
 
-THE NWS WILL STOP SCREAMING
+Susan and I both worked on the most recent edits together.
