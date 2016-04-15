@@ -7,78 +7,25 @@ console.log('User\'s name is ' + userName);
 alert('Okay ' + userName + ', let\'s begin!');
 
 var questions = ['Do I like to go hiking?','Did I go to college in Washington State?','Am I attempting to grow my first garden this summer?','Do I have a dog named Piper?','Do I like coffee more than tea?'];
-var responses = ['YES', 'Y', 'NO', 'N'];
-var correctAnswers = ['Correct.', 'Sorry, wrong.'];
+var correctAnswerArray = [['YES','Y'], ['NO','N'], ['YES','Y'], ['YES','Y'], ['YES', 'Y']];
+var incorrectAnswerArray = [['NO','N'], ['YES','Y'], ['NO','N'], ['NO','N'], ['NO', 'N']];
+var tellUserCorrect = ['Correct!', 'Correct! I went to school in California', 'Correct!', 'Correct', 'Correct, I am not crazy about tea'];
+var tellUserIncorrect = ['Incorrect', 'Incorrect', 'WRONG', 'Incorrect, I do have a dog named Piper', 'Incorrect, I am very much addicted to coffee.'];
 
-function hiking() {
-  var answer1 = prompt(questions[0]).toUpperCase();
-  console.log('Does ' + userName + ' think I like hiking? ' + answer1);
-  if(answer1 === responses[0] || answer1 === responses[1]) {
-    alert(correctAnswers[0]);
-    numCorrect += 1;
-    console.log(numCorrect);
-  } else {
-    alert(correctAnswers[1]);
-  }
-}
-hiking();
+function yesNoQuestions() {
+  for (i = 0; i < questions.length; i++) {
+    var userAnswer = (prompt(questions[i])).toUpperCase();
+    if (userAnswer === correctAnswerArray[i][0] || userAnswer === correctAnswerArray[i][1]) {
+      alert(tellUserCorrect[i]);
+      numCorrect += 1;
+      console.log(numCorrect);
+    } else {
+      alert(tellUserIncorrect[i]);
+    } //end of if/else
+  }//end of for
+}//end of function
 
-function college() {
-  var answer2 = prompt(questions[1]).toUpperCase();
-  console.log('Does ' + userName + ' think I went to college in Washington? ' + answer2);
-  if(answer2 === responses[2] || answer2 === responses[3]) {
-    alert(correctAnswers[0]);
-    numCorrect += 1;
-    console.log(numCorrect);
-  } else {
-    alert(correctAnswers[1]);
-  }
-}
-
-college();
-
-function garden() {
-  var answer3 = prompt(questions[2]).toUpperCase();
-  console.log('Does ' + userName + ' think I\'m growing my first garden this season? ' + answer3);
-  if(answer3 === responses[0] || answer3 === responses[1]) {
-    alert(correctAnswers[0]);
-    numCorrect += 1;
-    console.log(numCorrect);
-  } else {
-    alert(correctAnswers[1]);
-  }
-}
-
-garden();
-
-function piper() {
-  var answer4 = prompt(questions[3]).toUpperCase();
-  console.log('Does ' + userName + ' think I have a dog named Piper? ' + answer4);
-  if(answer4 === responses[0] || answer4 === responses[1]) {
-    alert(correctAnswers[0]);
-    numCorrect += 1;
-    console.log(numCorrect);
-  } else {
-    alert(correctAnswers[1]);
-  }
-}
-
-piper();
-
-function coffee() {
-  var answer5 = prompt(questions[4]).toUpperCase();
-  console.log('Does ' + userName + ' think I prefer coffee over tea? ' + answer5);
-  if(answer5 === responses[0] || answer5 === responses[1]) {
-    alert(correctAnswers[0]);
-    numCorrect += 1;
-    console.log(numCorrect);
-  } else {
-    alert(correctAnswers[1]);
-  }
-}
-coffee();
-
-//start of guessing game
+yesNoQuestions();
 
 function favNumber() {
   var answer = 8;
