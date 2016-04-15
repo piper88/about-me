@@ -6,6 +6,7 @@ console.log('User\'s name is ' + userName);
 
 alert('Okay ' + userName + ', let\'s begin!');
 
+//arrays for yesNoQuestions function
 var questions = ['Do I like to go hiking?','Did I go to college in Washington State?','Am I attempting to grow my first garden this summer?','Do I have a dog named Piper?','Do I like coffee more than tea?'];
 var correctAnswer = [['YES','Y'], ['NO','N'], ['YES','Y'], ['YES','Y'], ['YES', 'Y']];
 var tellUserCorrect = ['Correct!', 'Correct! I went to school in California', 'Correct!', 'Correct', 'Correct, I am not crazy about tea'];
