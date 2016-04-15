@@ -7,15 +7,14 @@ console.log('User\'s name is ' + userName);
 alert('Okay ' + userName + ', let\'s begin!');
 
 var questions = ['Do I like to go hiking?','Did I go to college in Washington State?','Am I attempting to grow my first garden this summer?','Do I have a dog named Piper?','Do I like coffee more than tea?'];
-var correctAnswerArray = [['YES','Y'], ['NO','N'], ['YES','Y'], ['YES','Y'], ['YES', 'Y']];
-var incorrectAnswerArray = [['NO','N'], ['YES','Y'], ['NO','N'], ['NO','N'], ['NO', 'N']];
+var correctAnswer = [['YES','Y'], ['NO','N'], ['YES','Y'], ['YES','Y'], ['YES', 'Y']];
 var tellUserCorrect = ['Correct!', 'Correct! I went to school in California', 'Correct!', 'Correct', 'Correct, I am not crazy about tea'];
 var tellUserIncorrect = ['Incorrect', 'Incorrect', 'WRONG', 'Incorrect, I do have a dog named Piper', 'Incorrect, I am very much addicted to coffee.'];
 
 function yesNoQuestions() {
   for (i = 0; i < questions.length; i++) {
     var userAnswer = (prompt(questions[i])).toUpperCase();
-    if (userAnswer === correctAnswerArray[i][0] || userAnswer === correctAnswerArray[i][1]) {
+    if (userAnswer === correctAnswer[i][0] || userAnswer === correctAnswer[i][1]) {
       alert(tellUserCorrect[i]);
       numCorrect += 1;
       console.log(numCorrect);
